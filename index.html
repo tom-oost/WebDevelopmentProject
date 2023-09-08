@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>CV Sandra van Gennep</title>
+    <script defer src="js/gdpr.js"></script>
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/phone.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
 <body style="margin: 0px;">
 
 <div class="page">
-    <section class="personalia">
+    <section class="profile-picture">
 
-        <img class="person-logo" src="images/person-pasfoto.png">
+        <img class="person-logo" src="images/joebidenprofile.png">
         <h1 class="person-name">Tom Oosterhof</h1>
+
+        <div class="skills--hidden-mobile">
+            <h3 class="skills-title--hidden-mobile">Vaardigheden</h3>
+            <hr>
+        </div>
 
     </section>
 
@@ -30,11 +40,30 @@
                 <div class="profile-content__element-header">
                 </div>
                 <p class="profile-content__description">
-                    Als arts en developer ben ik bekwaam in het onderzoeken van
-                    de medische context en het zoeken van een technische oplossing.
+                    Als developer kan ik omgaan met verschillende codetalen en applicaties maken.
                 <p>
             </div>
 
+            <div class="profile-content__category">
+                <h3 class="profile-content__category-title">Persoonlijke gegevens</h3>
+                <hr>
+                <div class="personalia-content">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                    <h5 class="personalia-content-text">s1158363@student.windesheim.nl</h5>
+                </div>
+                <div class="personalia-content">
+                    <i class="gg-phone"></i>
+                    <h5 class="personalia-content-text">+31 600000000</h5>
+                </div>
+                <div class="personalia-content">
+                    <i class="material-icons">location_on</i>
+                    <h5 class="personalia-content-text">Campus 2 <Br>8017 CA Zwolle</h5>
+                </div>
+                <div class="personalia-content">
+                    <a href="https://www.linkedin.com/in/tom-oosterhof-4042bb267" class="fa fa-linkedin-square" style="font-size:24px"></a>
+                    <h5 class="personalia-content-text"><a href="https://www.linkedin.com/in/tom-oosterhof-4042bb267">https://www.linkedin.com/in/tom-oosterhof-4042bb267</a></h5>
+                </div>
+            </div>
 
             <div class="profile-content__category">
                 <h3 class="profile-content__category-title">Opleidingen</h3>
@@ -43,20 +72,55 @@
 
             <div class="profile-content__element">
                 <div class="profile-content__element-header">
-                    <h4 class="profile-content__title">Farmacie</h4>
+                    <h4 class="profile-content__title">HAVO</h4>
                     <p class="profile-content__period">nov 2021 - mei 2022</p>
                 </div>
-                <p class="profile-content__institute">Universiteit Utrecht, Utrecht</p>
+                <p class="profile-content__institute"><span class="glyphicon glyphicon-book"></span> RSG NOV, Epe</p>
             </div>
 
             <div class="profile-content__element">
                 <div class="profile-content__element-header">
-                    <h4 class="profile-content__title">Onderzoeker</h4>
-                    <p class="profile-content__period">jan 2020 - feb 2021</p>
+                    <h4 class="profile-content__title">HBO-ICT</h4>
+                    <p class="profile-content__period">sep 2019 - heden</p>
                 </div>
-                <p class="profile-content__institute">Lindeboom instituut, Utrecht</p>
+                <p class="profile-content__institute"><span class="glyphicon glyphicon-book"></span> Windesheim, Zwolle</p>
             </div>
+
+            <div class="profile-content__element">
+                <div class="profile-content__element-header">
+                    <h4 class="profile-content__title">HBO-ICT propedeuse</h4>
+                    <p class="profile-content__period">sep 2019 - apr 2020</p>
+                </div>
+                <p class="profile-content__institute"><span class="glyphicon glyphicon-book"></span> Windesheim, Zwolle</p>
+            </div>
+
+            <div class="profile-content__category">
+                <h3 class="profile-content__category-title">Stages</h3>
+                <hr>
+            </div>
+
+            <div class="profile-content__category">
+                <h3 class="profile-content__category-title">Werkervaring</h3>
+                <hr>
+            </div>
+
         </section>
+
+    </section>
+</div>
+<div class="container">
+    <section class="gdpr-consent hide">
+
+        <div class="gdpr-consent__description">
+            <p>Deze website gebruikt cookies.
+                We gebruiken cookies om content te personaliseren, voor social media en het analyseren
+                van verkeer op de website, advertenties.</p>
+        </div>
+
+        <div class="gdpr-consent__choice">
+            <button class="gdpr-consent__button--accept">Ja, natuurlijk</button>
+            <button class="gdpr-consent__button--reject">Neu, misschien later</button>
+        </div>
 
     </section>
 </div>
