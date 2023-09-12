@@ -2,126 +2,228 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CV Sandra van Gennep</title>
+    <title>Tom Oosterhof</title>
     <script defer src="js/gdpr.js"></script>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/phone.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
-<body style="margin: 0px;">
+<body>
 
-<div class="page">
+<div class="page third-color">
+<!--//SIDEBAR-->
     <section class="profile-picture">
 
-        <img class="person-logo" src="images/joebidenprofile.png">
-        <h1 class="person-name">Tom Oosterhof</h1>
+<!--//PROFILE PICTURE AND NAME-->
+        <div class="profile-picture__section display-flex-column center-items">
+            <img class="person-logo" style="display: flex" src="images/donald-trump-pfp.png">
+            <p class="person-name">Tom Oosterhof</p>
+            <p class="person-qualification grey">Software/Webdeveloper</p>
+        </div>
 
-        <div class="skills--hidden-mobile">
-            <h3 class="skills-title--hidden-mobile">Vaardigheden</h3>
-            <hr>
+<!--//LAND, WOONPLAATS, LEEFTIJD-->
+        <div class="profile-picture__section--hidden-mobile">
+            <hr class="grey">
+            <div class="profile-content__element-header">
+                <p class="white">Land: </p>
+                <p class="grey">Nederland</p>
+            </div>
+            <div class="profile-content__element-header">
+                <p class="white">Woonplaats: </p>
+                <p class="grey">Heerde</p>
+            </div>
+            <div class="profile-content__element-header">
+                <p class="white">Geslacht: </p>
+                <p class="grey">Man</p>
+            </div>
+            <div class="profile-content__element-header">
+                <p class="white">Leeftijd: </p>
+                <p class="grey">19</p>
+            </div>
+            <hr class="grey">
+        </div>
+
+<!--//CODETALEN-->
+        <div class="profile-picture__section--hidden-mobile display-flex-column">
+            <h3 class="profile-content__category-title bold">Vaardigheden</h3>
+            <p class="codelanguages">C</p>
+            <p class="codelanguages">C#</p>
+            <p class="codelanguages">Java</p>
+            <p class="codelanguages">JavaScript</p>
+            <p class="codelanguages">HTML</p>
+            <p class="codelanguages">CSS</p>
+            <p class="codelanguages">PHP</p>
+            <p class="codelanguages">SQL</p>
+            <hr class="grey">
+        </div>
+
+<!--//TALEN-->
+        <div class="profile-picture__section--hidden-mobile">
+            <h3 class="profile-content__category-title bold">Talen</h3>
+            <div class="profile-content__span__left">
+                <div class="display-flex-row space-between">
+                    <p class="white">Nederlands</p>
+                    <p class="grey">100%</p>
+                </div>
+                <div class="w3-border language-percentage-bar">
+                    <div class="w3-green height100 border-radius-10" style="width:100%"></div>
+                </div>
+            </div>
+            <div class="profile-content__span__left">
+                <div class="display-flex-row space-between">
+                    <p class="white">Engels </p>
+                    <p class="grey">90%</p>
+                </div>
+                <div class="w3-border language-percentage-bar">
+                    <div class="w3-green height100 border-radius-10" style="width:90%"></div>
+                </div>
+            </div>
+            <div class="profile-content__span__left">
+                <div class="display-flex-row space-between">
+                    <p class="white">Duits </p>
+                    <p class="grey">25%</p>
+                </div>
+                <div class="w3-border language-percentage-bar">
+                    <div class="w3-green height100 border-radius-10" style="width:25%"></div>
+                </div>
+            </div>
+            <hr class="grey">
         </div>
 
     </section>
 
-    <section class="profile">
 
+<!--//PROFIEL-->
+    <section class="profile fourth-color">
         <section class="profile-content">
 
+<!--//ABOUT ME-->
             <div class="profile-content__category--hidden-mobile">
-                <h3 class="profile-content__category-title">Profiel</h3>
+                <h1 class="profile-content__category-title bold about-me-title">about me</h1>
+                <p class="about-me-paragraph third-color-text bold ">Hallo, Ik ben Tom Oosterhof. Ik ben een beginnend software engineer die op dit moment nog studeert aan windesheim HBO-ICT.
+                    Ik heb nu 3 jaar ervaring met programmeren op het HBO-niveau. Ik ben een persoon die houdt van doen, als er een klus is die gedaan moet worden ben ik er als eerste
+                    bij en ga ik door tot de klus afgemaakt is op een goede en nette manier. Als u het interresant vindt om contact op te nemen, wees niet bang om een mailtje/bericht te sturen naar
+                    de onderstaande contacten.</p>
                 <hr>
             </div>
 
-            <div class="profile-content__element--hidden-mobile">
-                <div class="profile-content__element-header">
-                </div>
-                <p class="profile-content__description">
-                    Als developer kan ik omgaan met verschillende codetalen en applicaties maken.
-                <p>
-            </div>
+<!--//ALLE PAGINA ONDERDELEN DIV-->
+            <div class="person-info__table">
 
-            <div class="profile-content__category">
-                <h3 class="profile-content__category-title">Persoonlijke gegevens</h3>
+<!--//OPLEIDINGEN-->
+                <div class="profile-content__category second-color">
+                <h3 class="profile-content__category-title bold">Opleidingen</h3>
                 <hr>
-                <div class="personalia-content">
-                    <i class="glyphicon glyphicon-envelope"></i>
-                    <h5 class="personalia-content-text">s1158363@student.windesheim.nl</h5>
+
+                <div class="profile-content__element">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title bold">HAVO</h4>
+                        <p class="profile-content__period white">nov 2021 - mei 2022</p>
+                    </div>
+                    <p class="profile-content__institute third-color-text"><span class="glyphicon glyphicon-book"></span> RSG NOV, Epe</p>
                 </div>
-                <div class="personalia-content">
-                    <i class="gg-phone"></i>
-                    <h5 class="personalia-content-text">+31 600000000</h5>
+
+                <div class="profile-content__element">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title bold">HBO-ICT</h4>
+                        <p class="profile-content__period white">sep 2019 - heden</p>
+                    </div>
+                    <p class="profile-content__institute third-color-text"><span class="glyphicon glyphicon-book"></span> Windesheim, Zwolle</p>
                 </div>
-                <div class="personalia-content">
-                    <i class="material-icons">location_on</i>
-                    <h5 class="personalia-content-text">Campus 2 <Br>8017 CA Zwolle</h5>
-                </div>
-                <div class="personalia-content">
-                    <a href="https://www.linkedin.com/in/tom-oosterhof-4042bb267" class="fa fa-linkedin-square" style="font-size:24px"></a>
-                    <h5 class="personalia-content-text"><a href="https://www.linkedin.com/in/tom-oosterhof-4042bb267">https://www.linkedin.com/in/tom-oosterhof-4042bb267</a></h5>
+
+                <div class="profile-content__element">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title bold">HBO-ICT propedeuse</h4>
+                        <p class="profile-content__period white">sep 2019 - apr 2020</p>
+                    </div>
+                    <p class="profile-content__institute third-color-text"><span class="glyphicon glyphicon-book"></span> Windesheim, Zwolle</p>
                 </div>
             </div>
 
-            <div class="profile-content__category">
-                <h3 class="profile-content__category-title">Opleidingen</h3>
+<!--//STAGES-->
+                <div class="profile-content__category second-color">
+                <h3 class="profile-content__category-title bold">Stages</h3>
                 <hr>
-            </div>
 
-            <div class="profile-content__element">
-                <div class="profile-content__element-header">
-                    <h4 class="profile-content__title">HAVO</h4>
-                    <p class="profile-content__period">nov 2021 - mei 2022</p>
+                <div class="profile-content__element">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title bold">NLVK/DJOPZZ</h4>
+                        <p class="profile-content__period white">2023</p>
+                    </div>
+                    <p class="profile-content__institute third-color-text">Burgemeester van Roijensingel 16, 8011 CT Zwolle</p>
                 </div>
-                <p class="profile-content__institute"><span class="glyphicon glyphicon-book"></span> RSG NOV, Epe</p>
             </div>
 
-            <div class="profile-content__element">
-                <div class="profile-content__element-header">
-                    <h4 class="profile-content__title">HBO-ICT</h4>
-                    <p class="profile-content__period">sep 2019 - heden</p>
-                </div>
-                <p class="profile-content__institute"><span class="glyphicon glyphicon-book"></span> Windesheim, Zwolle</p>
-            </div>
-
-            <div class="profile-content__element">
-                <div class="profile-content__element-header">
-                    <h4 class="profile-content__title">HBO-ICT propedeuse</h4>
-                    <p class="profile-content__period">sep 2019 - apr 2020</p>
-                </div>
-                <p class="profile-content__institute"><span class="glyphicon glyphicon-book"></span> Windesheim, Zwolle</p>
-            </div>
-
-            <div class="profile-content__category">
-                <h3 class="profile-content__category-title">Stages</h3>
+<!--//WERKERVARING-->
+                <div class="profile-content__category second-color">
+                <h3 class="profile-content__category-title bold">Werkervaring</h3>
                 <hr>
+                <div class="profile-content__element">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title bold">Handsloop</h4>
+                        <p class="profile-content__period white">2019 - HEDEN</p>
+                    </div>
+                    <p class="profile-content__institute third-color-text">Lagemaat Sloopwerken BV, Heerde</p>
+                    <p class="profile-content__institute third-color-text">Werkzaamheden variërend van grote bouwklussen tot bij particulieren thuis. 8 uur per dag in vakanties en op vrije dagen.</p>
+                </div>
             </div>
 
-            <div class="profile-content__category">
-                <h3 class="profile-content__category-title">Werkervaring</h3>
-                <hr>
-            </div>
+<!--//PERSOONLIJKE GEGEVENS-->
+                <div class="profile-content__category second-color">
+                    <h3 class="profile-content__category-title bold">Persoonlijke gegevens</h3>
+                    <hr>
+                    <div class="personalia-content">
+                        <i class="glyphicon glyphicon-envelope third-color-text"></i>
+                        <h5 class="personalia-content-text third-color-text">s1158363@student.windesheim.nl</h5>
+                    </div>
+                    <div class="personalia-content">
+                        <i class="gg-phone third-color-text"></i>
+                        <h5 class="personalia-content-text third-color-text">+31 600000000</h5>
+                    </div>
+                    <div class="personalia-content">
+                        <i class="material-icons third-color-text">location_on</i>
+                        <h5 class="personalia-content-text third-color-text">Campus 2 <Br>8017 CA Zwolle</h5>
+                    </div>
+                    <div class="personalia-content">
+                        <a href="https://www.linkedin.com/in/tom-oosterhof-4042bb267" class="fa fa-linkedin-square third-color-text" style="font-size:24px"></a>
+                        <h5 class="personalia-content-text third-color-text"><a href="https://www.linkedin.com/in/tom-oosterhof-4042bb267">https://www.linkedin.com/in/tom-oosterhof-4042bb267</a></h5>
+                    </div>
+                </div>
 
+<!--//LOREM IPSUM-->
+                <div class="profile-content__category second-color">
+                    <h3 class="profile-content__category-title bold">Lorem Ipsum</h3>
+                    <hr>
+                    <div class="profile-content__element">
+                        <p class="profile-content__institute third-color-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mi lectus, convallis quis nunc vitae, congue tincidunt leo. Morbi interdum nisi at nibh bibendum efficitur. Aliquam et elit et elit finibus ultrices. Nam viverra, nisi vitae lacinia tincidunt, odio magna malesuada nisl, et commodo turpis mi vel urna. Proin dictum dui nec eleifend interdum. In tincidunt turpis non consectetur interdum. Integer eget leo vehicula, faucibus dui molestie, malesuada lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque porttitor semper lorem, id sollicitudin est lacinia et. Morbi a efficitur nulla, ac lobortis sem. Pellentesque aliquam ultrices.</p>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
     </section>
 </div>
+
+<!--//COOKIES-->
 <div class="container">
-    <section class="gdpr-consent hide">
+    <section class="gdpr-consent hide first-color">
 
         <div class="gdpr-consent__description">
-            <p>Deze website gebruikt cookies.
-                We gebruiken cookies om content te personaliseren, voor social media en het analyseren
-                van verkeer op de website, advertenties.</p>
+            <p class="bold">Deze website gebruikt cookies</p>
+            <p>Wij gebruiken cookies om ervoor te zorgen dat onze pagina voor de bezoeker beter werkt.</p>
         </div>
 
         <div class="gdpr-consent__choice">
-            <button class="gdpr-consent__button--accept">Ja, natuurlijk</button>
-            <button class="gdpr-consent__button--reject">Neu, misschien later</button>
+            <button class="gdpr-consent__button--accept bold background__two">AKKOORD</button>
+            <button class="gdpr-consent__button--reject bold">NIET AKKOORD</button>
         </div>
-
     </section>
 </div>
 
