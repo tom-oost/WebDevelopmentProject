@@ -5,20 +5,70 @@
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script defer src="js/IncludePrefabs.js"></script>
 
+    <script defer src="js/Text.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="stylesheets/About.css">
-    <link rel="stylesheet" href="stylesheets/Cookies.css">
-    <link rel="stylesheet" href="stylesheets/Menu.css">
+    <link rel="stylesheet" href="stylesheets/Contact.css">
+    <link rel="stylesheet" href="stylesheets/Text.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body class="fourth-color">
-
+<body>
 <div data-include="Navigation"></div>
 
-<h1>CONTACT</h1>
+<div class="page">
 
+    <div class="middle-span third-color">
+        <p class="contact-me-title bold">Contact</p>
+        <form method="post" class="form-contactpage">
+
+            <div style="width: 80%; margin-left: 10%; margin-bottom: 5%; display: block">
+
+
+                <div style="width: 100%; display: flex; margin-top: 5%;">
+                    <div class="form-contactpage__input-div">
+                        <label for="FirstName" class="form-contactpage__input-label white">Voornaam:</label>
+                        <input class="form-contactpage__input-field third-color white" id="FirstName" type="text" value="Uw Voornaam">
+                    </div>
+                    <div class="form-contactpage__input-div">
+                        <label for="LastName" class="form-contactpage__input-label white">Achternaam:</label>
+                        <input class="form-contactpage__input-field third-color white" id="LastName" type="text" value="Uw Achternaam">
+                    </div>
+                </div>
+
+                <div style="width: 100%; display: flex; margin-top: 5%;">
+                    <div class="form-contactpage__input-div">
+                        <label for="Email" class="form-contactpage__input-label white">Email:</label>
+                        <input class="form-contactpage__input-field third-color white" id="Email" type="email" value="Uw Email">
+                    </div>
+                    <div class="form-contactpage__input-div">
+                        <label for="TelephoneNumber" class="form-contactpage__input-label white">TelefoonNummer:</label>
+                        <input class="form-contactpage__input-field third-color white" id="TelephoneNumber" type="tel" value="Uw Telefoonnummer">
+                    </div>
+                </div>
+
+                <div style="width: 100%; display: flex; margin-top: 5%;">
+                    <div class="form-contactpage__input-div-bericht">
+                        <label for="Email" class="form-contactpage__input-label white">Bericht:</label>
+                        <input class="form-contactpage__input-field third-color white" id="Bericht" type="text" value="Uw meegestuurde bericht">
+                    </div>
+                </div>
+
+                <div style="width: 100%; display: flex; margin-top: 5%;">
+                    <input class="form-contactpage__submit-field" type="submit">
+                </div>
+
+                <div style="display: flex; justify-content: center;">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 <div data-include="Cookies"></div>
-
 </body>
 </html>
