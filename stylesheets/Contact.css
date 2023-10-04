@@ -1,3 +1,5 @@
+/*  mobile version  */
+
 body{
     display: flex;
     flex-direction: column;
@@ -46,6 +48,20 @@ body{
 
 .form-contactpage {
 
+}
+
+.form-div {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    display: block;
+    overflow: auto
+}
+
+.form-contactpage-inputfields-div {
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
 }
 
 .form-contactpage__input-div {
@@ -109,6 +125,11 @@ body{
     transition: none;
 }
 
+.contactpage-socialmediabuttons {
+    display: flex;
+    justify-content: center;
+}
+
 .first-color {
     background: #dbd8e3;
 }
@@ -166,6 +187,19 @@ body{
     color: white;
 }
 
+@media only screen and (min-width: 800px) {
+
+/*    desktop version   */
+
+    .form-contactpage__input-div {
+        display: flex;
+        flex-direction: column;
+        width: 46%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+}
 
 
 

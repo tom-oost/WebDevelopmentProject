@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+    height: 80vh;
+    /*padding: 5%;*/
+    border-collapse: collapse;
+}
+
+UnClickableTd {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    /*background-color: #7fcdff;*/
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+ClickableTd {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #7fcdff;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+ClickableTd:hover {
+    opacity: 0.8;
+}

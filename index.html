@@ -2,8 +2,11 @@
 <html>
 <head>
 
+<!--Color Palette used for this page https://www.color-hex.com/color-palette/3497-->
+
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script defer src="js/IncludePrefabs.js"></script>
+    <script defer src="js/Grid.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,14 +14,47 @@
     <link rel="stylesheet" href="stylesheets/Cookies.css">
     <link rel="stylesheet" href="stylesheets/Menu.css">
 
+    <style>
+        table {
+            width: 100%;
+            height: 80vh;
+            /*padding: 5%;*/
+            border-collapse: collapse;
+        }
+
+        .UnClickableTd {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            color: white;
+            /*background-color: #7fcdff;*/
+        }
+        .ClickableTd {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            background-color: #7fcdff;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
-<body class="fourth-color">
+<body class="fourth-color" style="min-width: 100vw; min-height: 100vh; margin: 0">
 
 <div data-include="Navigation"></div>
-
-<h1>Home</h1>
-
-<div data-include="Cookies"></div>
-
+<div>
+    <p style="color: white">
+        plaats een schip van 2 groot
+    </p>
+    <button id="NoShipButton">No Ship</button>
+    <button id="RoteerButton">Roteren</button>
+    <button id="OneCellShipButton">1 Cell Ship</button>
+    <button id="TwoCellShipButton">2 Cell Ship</button>
+    <button id="ThreeCellShipButton">3 Cell Ship</button>
+    <table>
+        <tbody id="table-body"></tbody>
+    </table>
+</div>
 </body>
 </html>
