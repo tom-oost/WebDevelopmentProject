@@ -4,6 +4,7 @@ let Rotate = false;
 let OneCellShip = false;
 let TwoCellShip = false;
 let ThreeCellShip = false;
+let tableCreated = false;
 
 // Function to create the initial table with buttons
 function createInitialTable(rows, cols) {
@@ -28,6 +29,16 @@ function createInitialTable(rows, cols) {
         row.appendChild(col1);
         for (let j = 0; j < cols; j++) {
             const cell = document.createElement("td");
+            cell.addEventListener("click", () => {
+                if (NoShip){
+                    alert("selecteer eerst een schip");
+                }
+                else
+                {
+                    LogShip(j,i);
+                    PlaceShip(j,i);
+                }
+            });
 
             cell.addEventListener("mouseover", () => {
                 assignHoverEventlisteners(row,cell,j)
@@ -47,6 +58,82 @@ function createInitialTable(rows, cols) {
         tableBody.appendChild(row);
     }
     tableCreated = true;
+}
+
+function LogShip(x,y){
+    x++;
+    y++;
+    if (OneCellShip){
+        console.log("x: " + x + " y: " + y);
+    }
+    else if (TwoCellShip){
+        if (Rotate){
+            console.log("x: " + x + " y: " + (y-1) + ", x: " + x + " y: " + y);
+        }
+        else
+        {
+            console.log("x: " + x + " y: " + y + ", x: " + (x+1) + " y: " + y);
+        }
+    }
+    else if(ThreeCellShip){
+        if (Rotate){
+            console.log("x: " + x + " y: " + (y - 1) + ", x: " + x + " y: " + y + ", x: " + x + " y: " + (y + 1));
+        }
+        else
+        {
+            console.log("x: " + (x - 1) + " y: " + y + ", x: " + x + " y: " + y + ", x: " + (x + 1) + " y: " + y);
+        }
+    }
+}
+
+function PlaceShip(x,y){
+    x++;
+    y++;
+
+    const coordinates = [];
+    if (OneCellShip) {
+        coordinates.push(
+            { x: x, y: y }
+        );
+
+    } else if (TwoCellShip) {
+        if (Rotate) {
+            coordinates.push(
+                { x: x, y: (y - 1) },
+                { x: x, y: y }
+            );
+        } else {
+            coordinates.push(
+                { x: x, y: y },
+                { x: (x + 1), y: y }
+            );
+        }
+    } else if (ThreeCellShip) {
+        if (Rotate) {
+            coordinates.push(
+                { x: x, y: (y - 1) },
+                { x: x, y: y },
+                { x: x, y: (y + 1) }
+            );
+        } else {
+            coordinates.push(
+                { x: (x - 1), y: y },
+                { x: x, y: y },
+                { x: (x + 1), y: y }
+            );
+        }
+    }
+    const data = JSON.stringify(coordinates);
+    fetch('/Place-Ship', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: data
+    })
+        .then(response => response.json())
+        .then(result => console.log(result))
+        .catch(error => console.error('Error:', error));
 }
 
 function assignHoverEventlisteners(row,cell,looppoint){
@@ -242,4 +329,35 @@ document.getElementById("ThreeCellShipButton").addEventListener("click", () => {
     TwoCellShip = false;
     ThreeCellShip = true;
     reloadInitialTable();
+});
+
+document.getElementById("DatabaseButton").addEventListener("click", () => {
+    // Fetch the clicked coordinates from the server
+    fetch(`/get-database`, {
+        method: "GET",
+
+    }).then((response) => response.json())
+        .then((data) => {
+            console.log(JSON.stringify(data, null, 2)); // Print the JSON data with indentation
+        })
+        .catch((error) => {
+            console.error("Error fetching data:", error);
+        });
+});
+
+document.getElementById("EmptyDatabaseButton").addEventListener("click", () => {
+    // Fetch the clicked coordinates from the server
+    fetch(`/clear-database`, {
+        method: "POST",
+
+    }).then((response) => {
+        if (response.status === 200) {
+            alert("Database cleared successfully!");
+        } else {
+            alert("Error clearing database.");
+        }
+    })
+        .catch((error) => {
+            console.error("Error clearing database:", error);
+        });
 });
